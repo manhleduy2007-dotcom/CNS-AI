@@ -1,0 +1,85 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#061240"/>
+      <stop offset="100%" style="stop-color:#0d3fa0"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4da6ff"/>
+      <stop offset="100%" style="stop-color:#1a5ce8"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60d0ff;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#1a6cff;stop-opacity:0.1"/>
+    </linearGradient>
+    <filter id="glow6"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="soft6"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+
+  <rect width="600" height="300" fill="url(#bg6)"/>
+
+  <!-- Dot pattern -->
+  <pattern id="dots6" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.8" fill="rgba(255,255,255,0.07)"/>
+  </pattern>
+  <rect width="600" height="300" fill="url(#dots6)"/>
+
+  <!-- Glow halos -->
+  <ellipse cx="300" cy="140" rx="200" ry="160" fill="rgba(30,100,255,0.18)" filter="url(#glow6)"/>
+  <ellipse cx="300" cy="140" rx="90" ry="80" fill="rgba(60,160,255,0.14)" filter="url(#glow6)"/>
+
+  <!-- Outer pulse rings -->
+  <circle cx="300" cy="140" r="110" fill="none" stroke="rgba(100,180,255,0.1)" stroke-width="1"/>
+  <circle cx="300" cy="140" r="85" fill="none" stroke="rgba(100,180,255,0.14)" stroke-width="1"/>
+  <circle cx="300" cy="140" r="62" fill="none" stroke="rgba(100,180,255,0.2)" stroke-width="1.2"/>
+
+  <!-- Shield shape -->
+  <path d="M300 72 L348 92 L348 148 Q348 174 300 192 Q252 174 252 148 L252 92 Z"
+        fill="url(#shieldGrad)" opacity="0.22" stroke="rgba(100,200,255,0.5)" stroke-width="2"/>
+  <!-- Shield inner -->
+  <path d="M300 84 L338 100 L338 148 Q338 168 300 182 Q262 168 262 148 L262 100 Z"
+        fill="rgba(26,108,255,0.15)"/>
+
+  <!-- Checkmark inside shield -->
+  <polyline points="282,138 296,154 322,122"
+            fill="none" stroke="rgba(100,240,180,0.9)" stroke-width="3.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 4 Principle nodes around shield -->
+  <!-- Node: Trung thực (Honesty) — top -->
+  <circle cx="300" cy="40" r="20" fill="rgba(255,255,255,0.07)" stroke="rgba(100,200,255,0.4)" stroke-width="1.5"/>
+  <text x="291" y="36" font-family="sans-serif" font-size="13" fill="rgba(100,220,255,0.85)">📝</text>
+  <text x="278" y="50" font-family="'DM Sans',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.5)" letter-spacing="0.5">TRUNG THỰC</text>
+
+  <!-- Node: Bảo mật (Privacy) — right -->
+  <circle cx="520" cy="130" r="20" fill="rgba(255,255,255,0.07)" stroke="rgba(100,200,255,0.4)" stroke-width="1.5"/>
+  <text x="511" y="126" font-family="sans-serif" font-size="13" fill="rgba(100,220,255,0.85)">🔒</text>
+  <text x="500" y="140" font-family="'DM Sans',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.5)" letter-spacing="0.5">BẢO MẬT</text>
+
+  <!-- Node: Công bằng (Fairness) — bottom -->
+  <circle cx="300" cy="242" r="20" fill="rgba(255,255,255,0.07)" stroke="rgba(100,200,255,0.4)" stroke-width="1.5"/>
+  <text x="291" y="238" font-family="sans-serif" font-size="13" fill="rgba(100,220,255,0.85)">⚖️</text>
+  <text x="280" y="252" font-family="'DM Sans',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.5)" letter-spacing="0.5">CÔNG BẰNG</text>
+
+  <!-- Node: Minh bạch (Transparency) — left -->
+  <circle cx="80" cy="130" r="20" fill="rgba(255,255,255,0.07)" stroke="rgba(100,200,255,0.4)" stroke-width="1.5"/>
+  <text x="71" y="126" font-family="sans-serif" font-size="13" fill="rgba(100,220,255,0.85)">💡</text>
+  <text x="56" y="140" font-family="'DM Sans',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.5)" letter-spacing="0.5">MINH BẠCH</text>
+
+  <!-- Connecting dashed lines from nodes to shield -->
+  <line x1="300" y1="60" x2="300" y2="72" stroke="rgba(100,200,255,0.3)" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <line x1="500" y1="130" x2="349" y2="135" stroke="rgba(100,200,255,0.3)" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <line x1="300" y1="222" x2="300" y2="192" stroke="rgba(100,200,255,0.3)" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <line x1="100" y1="130" x2="251" y2="130" stroke="rgba(100,200,255,0.3)" stroke-width="1.2" stroke-dasharray="3,2"/>
+
+  <!-- Small accent dots on ring intersections -->
+  <circle cx="300" cy="30" r="3" fill="rgba(100,220,255,0.7)"/>
+  <circle cx="410" cy="57" r="2.5" fill="rgba(100,220,255,0.5)"/>
+  <circle cx="190" cy="57" r="2.5" fill="rgba(100,220,255,0.5)"/>
+  <circle cx="410" cy="223" r="2.5" fill="rgba(100,220,255,0.4)"/>
+  <circle cx="190" cy="223" r="2.5" fill="rgba(100,220,255,0.4)"/>
+
+  <!-- Label -->
+  <text x="30" y="268" font-family="'DM Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.35)" letter-spacing="3">TUẦN 06</text>
+  <text x="30" y="288" font-family="'DM Sans', Arial, sans-serif" font-size="12.5" font-weight="700" fill="rgba(255,255,255,0.9)" letter-spacing="0.5">Sử dụng AI có trách nhiệm trong học tập</text>
+</svg>

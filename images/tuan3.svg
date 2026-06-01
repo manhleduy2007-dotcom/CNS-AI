@@ -1,0 +1,77 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#071a5e"/>
+      <stop offset="100%" style="stop-color:#2060e8"/>
+    </linearGradient>
+    <linearGradient id="aiGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60d0ff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#1a6cff;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="blur3"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="glow3soft"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+
+  <rect width="600" height="300" fill="url(#bg3)"/>
+
+  <!-- Subtle diagonal lines -->
+  <line x1="0" y1="0" x2="600" y2="300" stroke="rgba(255,255,255,0.03)" stroke-width="40"/>
+  <line x1="0" y1="60" x2="600" y2="360" stroke="rgba(255,255,255,0.02)" stroke-width="30"/>
+
+  <!-- Glow center -->
+  <ellipse cx="300" cy="150" rx="200" ry="150" fill="url(#aiGlow)" filter="url(#blur3)"/>
+
+  <!-- Chat bubble — user -->
+  <rect x="50" y="55" width="220" height="52" rx="14" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <polygon points="50,80 34,90 50,100" fill="rgba(255,255,255,0.1)"/>
+  <text x="70" y="77" font-family="'DM Sans', Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">Role: Expert developer</text>
+  <text x="70" y="93" font-family="'DM Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,0.85)">Hãy giải thích cho tôi về...</text>
+
+  <!-- Prompt tag chips -->
+  <rect x="50" y="120" width="68" height="22" rx="11" fill="rgba(100,200,255,0.2)" stroke="rgba(100,200,255,0.4)" stroke-width="1"/>
+  <text x="62" y="135" font-family="monospace" font-size="10" fill="rgba(150,220,255,0.9)">[ROLE]</text>
+
+  <rect x="126" y="120" width="74" height="22" rx="11" fill="rgba(150,100,255,0.2)" stroke="rgba(180,130,255,0.4)" stroke-width="1"/>
+  <text x="138" y="135" font-family="monospace" font-size="10" fill="rgba(200,170,255,0.9)">[CONTEXT]</text>
+
+  <rect x="208" y="120" width="66" height="22" rx="11" fill="rgba(100,255,180,0.15)" stroke="rgba(100,255,180,0.35)" stroke-width="1"/>
+  <text x="220" y="135" font-family="monospace" font-size="10" fill="rgba(140,255,200,0.9)">[FORMAT]</text>
+
+  <!-- AI response bubble -->
+  <rect x="290" y="55" width="255" height="100" rx="14" fill="rgba(26,108,255,0.25)" stroke="rgba(100,180,255,0.35)" stroke-width="1.5"/>
+  <polygon points="545,90 561,100 545,110" fill="rgba(26,108,255,0.25)"/>
+
+  <!-- AI icon -->
+  <circle cx="314" cy="82" r="12" fill="rgba(100,200,255,0.25)" stroke="rgba(100,200,255,0.5)" stroke-width="1"/>
+  <text x="307" y="87" font-family="serif" font-size="13" fill="rgba(150,220,255,0.9)">AI</text>
+
+  <!-- Typing lines -->
+  <rect x="335" y="74" width="120" height="8" rx="4" fill="rgba(255,255,255,0.6)"/>
+  <rect x="335" y="88" width="185" height="8" rx="4" fill="rgba(255,255,255,0.4)"/>
+  <rect x="335" y="102" width="145" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+  <rect x="335" y="116" width="80" height="8" rx="4" fill="rgba(255,255,255,0.15)"/>
+  <!-- cursor -->
+  <rect x="420" y="116" width="6" height="8" rx="1" fill="rgba(100,220,255,0.8)"/>
+
+  <!-- Floating formula / sparkle elements -->
+  <text x="75" y="195" font-family="monospace" font-size="13" fill="rgba(100,200,255,0.5)">Prompt = Role + Context + Task + Format</text>
+  <line x1="50" y1="175" x2="540" y2="175" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- Neural net dots -->
+  <circle cx="420" cy="220" r="5" fill="rgba(100,200,255,0.5)"/>
+  <circle cx="460" cy="205" r="4" fill="rgba(100,200,255,0.35)"/>
+  <circle cx="500" cy="225" r="5" fill="rgba(100,200,255,0.5)"/>
+  <circle cx="540" cy="210" r="4" fill="rgba(100,200,255,0.3)"/>
+  <circle cx="440" cy="240" r="3" fill="rgba(100,200,255,0.25)"/>
+  <circle cx="480" cy="245" r="4" fill="rgba(100,200,255,0.4)"/>
+  <line x1="420" y1="220" x2="460" y2="205" stroke="rgba(100,200,255,0.2)" stroke-width="1"/>
+  <line x1="460" y1="205" x2="500" y2="225" stroke="rgba(100,200,255,0.2)" stroke-width="1"/>
+  <line x1="500" y1="225" x2="540" y2="210" stroke="rgba(100,200,255,0.2)" stroke-width="1"/>
+  <line x1="420" y1="220" x2="440" y2="240" stroke="rgba(100,200,255,0.15)" stroke-width="1"/>
+  <line x1="460" y1="205" x2="480" y2="245" stroke="rgba(100,200,255,0.15)" stroke-width="1"/>
+  <line x1="500" y1="225" x2="480" y2="245" stroke="rgba(100,200,255,0.15)" stroke-width="1"/>
+
+  <!-- Label -->
+  <text x="30" y="268" font-family="'DM Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.35)" letter-spacing="3">TUẦN 03</text>
+  <text x="30" y="288" font-family="'DM Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="rgba(255,255,255,0.9)" letter-spacing="1">Viết prompt hiệu quả với AI</text>
+</svg>
